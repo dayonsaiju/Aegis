@@ -1,5 +1,5 @@
 # Environment variables (contains API keys - NEVER commit!)
-.env
+.env.example
 
 # Python cache
 __pycache__/
@@ -9,7 +9,7 @@ __pycache__/
 .Python
 
 # Virtual environment
-venv/
+.venv/
 env/
 ENV/
 
