@@ -61,19 +61,29 @@ Aegis is a powerful YouTube comment analysis tool that detects bot comments, har
    pip install -r requirements.txt
    ```
 
-3. **Start the backend server**
+3. **Set up environment variables (for Instagram analysis)**
+   ```bash
+   # Copy the example environment file
+   cp .env.example .env
+   
+   # Edit .env and add your API keys:
+   # - APIFY_TOKEN: Get from https://console.apify.com/account/integrations
+   # - GROQ_API_KEY: Get from https://console.groq.com/keys
+   ```
+
+4. **Start the backend server**
    ```bash
    python api_server.py
    ```
    Server will run on: http://localhost:5000
 
-4. **Start the frontend server**
+5. **Start the frontend server**
    ```bash
    python -m http.server 8080
    ```
    Frontend will run on: http://localhost:8080
 
-5. **Open your browser**
+6. **Open your browser**
    ```
    http://localhost:8080/index.html
    ```

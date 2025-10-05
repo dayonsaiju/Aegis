@@ -1,5 +1,10 @@
 # Environment variables (contains API keys - NEVER commit!)
+.env
+.env.local
 .env.example
+.env.production
+.env.development
+# Keep .env.example for reference (with placeholder values only)
 
 # Python cache
 __pycache__/

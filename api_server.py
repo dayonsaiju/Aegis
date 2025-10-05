@@ -25,10 +25,10 @@ CORS(app)  # Enable CORS for frontend access
 
 analyzer = YouTubeAnalyzer()
 
-# Default external service config (can be overridden by environment variables)
-DEFAULT_APIFY_TOKEN = os.environ.get('APIFY_TOKEN') or "apify_api_SDsVwn6HTh2vJbCvSYtmw7Fyn54RRj3czimt"
-DEFAULT_GROQ_API_KEY = os.environ.get('GROQ_API_KEY') or "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"
-DEFAULT_INSTAGRAM_ACTOR_ID = os.environ.get('ACTOR_ID') or "apify~instagram-scraper"
+# External service config (must be set via environment variables)
+DEFAULT_APIFY_TOKEN = os.environ.get('APIFY_TOKEN')
+DEFAULT_GROQ_API_KEY = os.environ.get('GROQ_API_KEY')
+DEFAULT_INSTAGRAM_ACTOR_ID = os.environ.get('ACTOR_ID', "apify~instagram-scraper")
 
 @app.route('/api/health', methods=['GET'])
 def health_check():
